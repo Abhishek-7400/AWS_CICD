@@ -8,3 +8,4 @@ https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operati
     6  chmod +x ./install
     7  sudo ./install auto
     8  systemctl status codedeploy-agent
+    9  systemctl start codedeploy-agent
