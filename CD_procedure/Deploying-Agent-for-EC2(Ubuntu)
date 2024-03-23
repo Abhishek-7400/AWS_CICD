@@ -1,11 +1,13 @@
 go to this link and follow steps to download agent or deploy runner in your ec2 instance
 https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-ubuntu.html
-    1  sudo apt update
-    2  sudo apt install ruby-full
-    3  sudo apt install wget
-    4  cd /home/ubuntu
-    5  wget https://aws-codedeploy-ap-northeast-3.s3.ap-northeast-3.amazonaws.com/latest/install
-    6  chmod +x ./install
-    7  sudo ./install auto
-    8  systemctl status codedeploy-agent
-    9  systemctl start codedeploy-agent
+script to download the agent and setup the agent
+#! /bin/bash
+sudo apt update
+sudo apt install ruby-full
+sudo apt install wget
+cd /home/ubuntu
+wget https://aws-codedeploy-ap-northeast-3.s3.ap-northeast-3.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+systemctl status codedeploy-agent
+sudo service codedeploy-agent
