@@ -1,6 +1,6 @@
 # Install EKS
-
-Please follow the prerequisites doc before this.
+got to this link and install 
+https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/setting-up-eksctl.html
 
 ## Install using Fargate
 
