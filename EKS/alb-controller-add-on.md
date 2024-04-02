@@ -27,6 +27,10 @@ eksctl create iamserviceaccount \
 ```
 
 ## Deploy ALB controller
+install helm
+```
+sudo snap install helm --classic
+```
 
 Add helm repo
 
